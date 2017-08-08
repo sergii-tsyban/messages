@@ -43,6 +43,7 @@ http://localhost:8080/api/users/bill/follow
 Empty response 200OK expected
 
 --check terry folloed by bill
+GET
 http://localhost:8080/api/users/terry/followers
 Expected:
 200OK
