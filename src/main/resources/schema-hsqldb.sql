@@ -1,0 +1,3 @@
+create table users(name varchar(255) not null, primary key (name));
+create table messages(id int identity primary key, posted_by varchar(255) not null, content varchar(144) not null, posted_date timestamp not null, foreign key (posted_by) references users(name));
+create table followers(follow_by varchar(255) not null, follow_to varchar(255) not null, foreign key (follow_by) references users(name), foreign key (follow_to) references users(name));
