@@ -22,6 +22,9 @@ public class MessagesServiceImpl implements MessagesService{
     @Autowired
     private MessageRepository messageRepository;
 
+    public MessagesServiceImpl() {
+    }
+
     public MessagesServiceImpl(UserService userService, MessageRepository messageRepository) {
         this.userService = userService;
         this.messageRepository = messageRepository;
