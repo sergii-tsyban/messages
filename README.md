@@ -1,6 +1,6 @@
 
 ### BUILD AND RUN
-$ mvn package
+$ mvn package--
 $ java -jar target/messages-1.0-SNAPSHOT.jar
 
 ### TESTING
