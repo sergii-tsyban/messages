@@ -49,6 +49,7 @@ Empty response 200OK expected
 
 #### check terry folloed by bill
 GET
+
 http://localhost:8080/api/users/terry/followers
 Expected:
 200OK
@@ -60,6 +61,7 @@ Expected:
 
 #### show bill's wall
 GET
+
 http://localhost:8080/api/messages/wall/bill
 Expected:
 200OK
@@ -71,6 +73,7 @@ Expected:
 
 #### show bill's timeline
 GET
+
 http://localhost:8080/api/messages/timeline/bill
 Expected:
 200OK
