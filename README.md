@@ -1,13 +1,14 @@
 
 ### BUILD AND RUN
-`$ mvn package`
+$ mvn package
 
-`$ java -jar target/messages-1.0-SNAPSHOT.jar`
+$ java -jar target/messages-1.0-SNAPSHOT.jar
 
 ### TESTING
 #### post new messages and ctreate users
 POST
 Content-Type: application/json
+
 http://localhost:8080/api/messages/post
 {
 	"user" : "terry",
@@ -17,6 +18,7 @@ Empty response 200OK expected
 
 POST
 Content-Type: application/json
+
 http://localhost:8080/api/messages/post
 {
 	"user" : "bill",
@@ -26,6 +28,7 @@ Empty response 200OK expected
 
 POST
 Content-Type: application/json
+
 http://localhost:8080/api/messages/post
 {
 	"user" : "garry",
@@ -37,6 +40,7 @@ Empty response 200OK expected
 #### make bill follow others
 POST
 Content-Type: application/json
+
 http://localhost:8080/api/users/bill/follow
 {
 	"users" : [ "terry", "garry" ]
