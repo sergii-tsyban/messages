@@ -1,10 +1,10 @@
 
------- BUILD AND RUN ------
+### BUILD AND RUN
 $ mvn package
 $ java -jar target/messages-1.0-SNAPSHOT.jar
 
------- TESTING ------
--- post new messages and ctreate users
+### TESTING
+#### post new messages and ctreate users
 POST
 Content-Type: application/json
 http://localhost:8080/api/messages/post
@@ -33,7 +33,7 @@ http://localhost:8080/api/messages/post
 Empty response 200OK expected
 
 
--- make bill follow others
+#### make bill follow others
 POST
 Content-Type: application/json
 http://localhost:8080/api/users/bill/follow
@@ -42,7 +42,7 @@ http://localhost:8080/api/users/bill/follow
 }
 Empty response 200OK expected
 
---check terry folloed by bill
+#### check terry folloed by bill
 GET
 http://localhost:8080/api/users/terry/followers
 Expected:
@@ -53,7 +53,7 @@ Expected:
 ],
 }
 
--- show bill's wall
+#### show bill's wall
 GET
 http://localhost:8080/api/messages/wall/bill
 Expected:
@@ -64,7 +64,7 @@ Expected:
 "postedDate": 1502208171007
 }
 
--- show bill's timeline
+#### show bill's timeline
 GET
 http://localhost:8080/api/messages/timeline/bill
 Expected:
