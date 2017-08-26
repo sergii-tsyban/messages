@@ -10,30 +10,36 @@ POST
 Content-Type: application/json
 
 http://localhost:8080/api/messages/post
+
 {
 	"user" : "terry",
     "message" : "I am terry"
 }
+
 Empty response 200OK expected
 
 POST
 Content-Type: application/json
 
 http://localhost:8080/api/messages/post
+
 {
 	"user" : "bill",
     "message" : "I am bill"
 }
+
 Empty response 200OK expected
 
 POST
 Content-Type: application/json
 
 http://localhost:8080/api/messages/post
+
 {
 	"user" : "garry",
     "message" : "I am garry"
 }
+
 Empty response 200OK expected
 
 
@@ -42,9 +48,11 @@ POST
 Content-Type: application/json
 
 http://localhost:8080/api/users/bill/follow
+
 {
 	"users" : [ "terry", "garry" ]
 }
+
 Empty response 200OK expected
 
 #### check terry followed by bill
@@ -57,7 +65,7 @@ Expected:200OK
 {
 "users": [
   "bill"
-],
+]
 }
 
 #### show bill's wall
