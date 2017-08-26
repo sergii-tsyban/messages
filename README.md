@@ -1,7 +1,7 @@
 
 ### BUILD AND RUN
-$ mvn package
-$ java -jar target/messages-1.0-SNAPSHOT.jar
+`$ mvn package`
+`$ java -jar target/messages-1.0-SNAPSHOT.jar`
 
 ### TESTING
 #### post new messages and ctreate users
