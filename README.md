@@ -47,12 +47,13 @@ http://localhost:8080/api/users/bill/follow
 }
 Empty response 200OK expected
 
-#### check terry folloed by bill
+#### check terry followed by bill
 GET
 
 http://localhost:8080/api/users/terry/followers
-Expected:
-200OK
+
+Expected:200OK
+
 {
 "users": [
   "bill"
@@ -63,8 +64,9 @@ Expected:
 GET
 
 http://localhost:8080/api/messages/wall/bill
-Expected:
-200OK
+
+Expected:200OK
+
 {
 "user": "bill",
 "message": "I am bill",
@@ -75,8 +77,9 @@ Expected:
 GET
 
 http://localhost:8080/api/messages/timeline/bill
-Expected:
-200OK
+
+Expected:200OK
+
 {
 "user": "garry",
 "message": "I am garry",
